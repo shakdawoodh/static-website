@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --green-color: #73b385;
+  --dark-gray-color: #a7a7a7;
+  --gray-color: #f2f2f2;
+  --black-color: #000;
+  --white-color: #fff;
+  --Montserrat-font: "Montserrat", sans-serif;
+}
+.active {
+  background-color: var(--green-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--gray-color)!important;
+  transition: 0.5s;
+}
+/* NAV BAR  */
+.fab-navbar a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-family: var(--Montserrat-font);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+
+}
+.fab-navbar a:hover {
+    color: var(--green-color);
+    transition: 0.2s;
+}
+.fab-navbar {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 15px;
+}
+
+/* HERO SECTION  */
+
+.fab-hero-section{
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+.fab-hero-section h1{
+    font-family: var(--Montserrat-font);
+    font-weight: 700;
+    font-size:3.75rem;
+    width: 75%;
+}
+.fab-hero-section .fab-green-text {
+    color: var(--green-color);
+}
+.fab-button-section{
+    display: flex;
+    gap: 15px;
+}
+.fab-green-button{
+    display: flex;
+    align-items: center;;
+    border-radius: 5px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    padding:15px 25px;
+    font-size:15px;
+    font-family:var(--Montserrat-font);
+    font-weight:700;
+    transition: 0.2s;
+}
+
+.fab-green-button:hover{
+    transition: 0.2s;
+    background-color: var(--black-color);
+  
+}
+
+.fab-white-button{
+    display: flex;
+    align-items: center;;
+    border-radius: 5px;
+    background-color: var(--dark-gray-color);
+    color: var(--black-color);
+    border: none;
+    padding:15px 25px;
+    font-size:15px;
+    font-family:var(--Montserrat-font);
+    font-weight:700;
+    transition: 0.2s;
+}
+
+.fab-white-button:hover{
+    transition: 0.2s;
+    background-color: var(--gray-color);
+  
+}
